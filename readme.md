@@ -16,12 +16,12 @@ http://nodejs.org
 
 Then, either run ```install.sh``` or follow these steps:  
 1. Clone this repository in Git  
-```git clone https://github.com/skylineproject/ds.git```
+  ```git clone https://github.com/skylineproject/ds.git```  
 2. Change your working directory to the directory of the cloned repository  
-3. Install dependencies with NPM:  
-```npm install```
-4. Start the server with NPM:  
-```npm start```
+3. Install dependencies with NPM:    
+  ```npm install```  
+4. Start the server with NPM:    
+  ```npm start```  
 5. Navigate to localhost:5000/new to change the header and sign body text  
 6. Click the box to the right of the text boxes, and see your sign in action  
 
