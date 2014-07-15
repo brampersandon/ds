@@ -1,8 +1,8 @@
 #!/bin/sh
 ## CLONE THE REPO
-git clone https://github.com/skylineproject/ds.git &
-cd ds &
+git clone https://github.com/skylineproject/ds.git; 
+cd ds;
 ## INSTALL DEPENDENCIES WITH NPM
-npm install &
+npm install;
 ## START SERVER
-npm start &
+npm start;
