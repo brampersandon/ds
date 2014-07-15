@@ -14,20 +14,24 @@ First, make sure Node is installed:
 
 http://nodejs.org
 
-Then, either run install.sh or follow these steps:
-1. Clone this repository in Git
-	git clone https://github.com/skylineproject/ds.git
-2. Change your working directory to the directory of the cloned repository
-3. Install dependencies with NPM:
-	npm install
-4. Start the server with NPM:
-	npm start
-5. Navigate to localhost:5000/new to change the header and sign body text
-6. Click the box to the right of the text boxes, and see your sign in action
+Then, either run install.sh or follow these steps:  
+1. Clone this repository in Git  
+	git clone https://github.com/skylineproject/ds.git  
+2. Change your working directory to the directory of the cloned repository  
+3. Install dependencies with NPM:  
+	npm install  
+4. Start the server with NPM:  
+	npm start  
+5. Navigate to localhost:5000/new to change the header and sign body text  
+6. Click the box to the right of the text boxes, and see your sign in action  
 
 ## Configuration
 Add CSS to /public/stylesheets/style.css
 Change the Jade HTML templates in /views/index.jade and /views/new.jade
+
+## Use
+View the sign at http://localhost:5000
+Edit the sign at http://localhost:5000/new
 
 ## Recommendations:
 This software is intended for use behind a firewall, or a router that supports Network Address Translation. I have made no effort whatsoever to limit what the server gets as input, though that would probably be a good idea for a future enhancement.
