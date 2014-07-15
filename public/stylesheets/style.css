@@ -1,0 +1,13 @@
+body {
+  padding: 50px;
+  font: 14px Helvetica, Arial, sans-serif;
+}
+h1 {
+  background-color:orange;
+  padding: 1em;
+}
+p {
+  text-align: center;
+  font-size:86px;
+  font-style:bold;
+}
