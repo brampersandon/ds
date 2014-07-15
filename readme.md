@@ -25,11 +25,11 @@ Then, either run ```install.sh``` or follow these steps:
 5. Navigate to localhost:5000/new to change the header and sign body text  
 6. Click the box to the right of the text boxes, and see your sign in action  
 
-## Configuration
+## Configuration:
 Add CSS to /public/stylesheets/style.css  
 Change the Jade HTML templates in /views/index.jade and /views/new.jade
 
-## Use
+## Use:
 View the sign at http://localhost:5000  
 Edit the sign at http://localhost:5000/new  
 
@@ -47,3 +47,6 @@ But, hey, if you see something you think could be done better, please create pul
 - change colors on the live site
 - add authentication of some sort
 - tidy up any extraneous bits
+
+### Contact
+Give me a shout out on twitter if you have any questions -- I'm @brandon_mn
