@@ -2,7 +2,10 @@ extends layout
 
 block content
   h1 change the sign 
-  form(action='/newsignpost' method="post")
-    input(type='text' name='header' placeholder='header text')
-    input(type='text' name='new' placeholder="sign text")
+  h2 current signage:
+  p(class='recap')='top line: ' + sign.top 
+  p(class='recap')='bottom line: ' + sign.bottom
+  form(action='/signpost' method="post")
+    input(type='text' name='top' placeholder="top line")
+    input(type='text' name='bottom' placeholder='bottom line')
     input(type='submit' placeholder="submit")
