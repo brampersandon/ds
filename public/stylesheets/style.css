@@ -1,9 +1,10 @@
 body {
+  text-align: center;
   padding: 50px;
-  font: 14px Helvetica, Arial, sans-serif;
+  font: 14px "Raleway", Helvetica, Arial, sans-serif;
+  color:#1C4594 ;
 }
 h1 {
-  background-color:orange;
   padding: 1em;
 }
 p#top {

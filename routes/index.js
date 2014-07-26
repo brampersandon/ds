@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
 var sign = new Object(); 
-sign.top = 'Welcome to Technology Help!';
-sign.bottom =  'Today, we\'re open from 8a until 5p';
+sign.top = 'Welcome to ds!';
+sign.bottom =  'go to <a href="/new">/new on this host</a> to change the sign';
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index');
+  res.render('index', {sign: sign});
 });
 /* GET new sign page. */
 router.get('/new', function(req, res) {
