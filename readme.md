@@ -1,4 +1,4 @@
-# ds: digital signage
+![ds: dead simple digital signage](https://raw.githubusercontent.com/skylineproject/ds/master/public/images/img.gif)
 ### quick and easy digital signage in node.js
 
 ds is a web interface with minimal server-side hijinx to create quick, easy digital signage. 
