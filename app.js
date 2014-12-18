@@ -4,6 +4,8 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var allowOnly = require('./allowOnly.js');
+var hostname = require('os').hostname()
 
 var routes = require('./routes/index');
 
@@ -19,6 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(allowOnly(['localhost', '127.0.0.1'/*,hostname*/])) // << UNCOMMENT ',hostname' if you'd like computers other than the server to use this.
 
 app.use('/', routes);
 app.use('/new', routes);
@@ -41,7 +44,7 @@ app.use(function(err, req, res, next) {
     });
 });
 
-var port = Number(process.env.PORT || 5000);
+var port = Number(process.env.PORT || 8080);
 app.listen(port, function() {
 	  console.log("Listening on " + port);
 	  console.log("Go to localhost:" + port + " to view a sign");
