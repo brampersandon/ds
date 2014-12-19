@@ -1,8 +1,10 @@
 var express = require('express');
 var router = express.Router();
-var sign = new Object(); 
+var sign = new Object();
 sign.top = 'Welcome to ds!';
 sign.bottom =  'go to /new on this site to change the sign';
+port = process.env.PORT || 5000;
+host = require('os').hostname();
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('index', {sign: sign});
@@ -16,11 +18,11 @@ router.post('/signpost', function(req, res) {
 	sign.top = req.body.top;
 	sign.bottom = req.body.bottom;
 	console.log(sign.top+'\n'+sign.bottom);
-	res.render('thanks', {sign: sign, host: require('os').hostname()});
+	res.render('thanks', {sign: sign, host: host, port:port});
 });
 /* GET sign text */
 router.get('/text', function(req, res) {
 	res.send(sign);
-	console.log(sign);	
+	console.log(sign);
 });
 module.exports = router;
