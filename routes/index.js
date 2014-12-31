@@ -1,8 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var sign = new Object();
-sign.top = 'Welcome to ds!';
-sign.bottom =  'go to /new on this site to change the sign';
+// default text
+var sign = {
+	top = 'Welcome to ds!',
+	bottom =  'go to /new on this site to change the sign'
+}
+// useful metadata
 port = process.env.PORT || 5000;
 host = require('os').hostname();
 /* GET home page. */
